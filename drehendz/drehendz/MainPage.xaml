@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="drehendz.MainPage">
+
+    <AbsoluteLayout>
+        <Image
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Aspect="AspectFill"
+            Opacity="0.8"
+            Source="tropicalfashionbrand.jpg" />
+
+        <Image 
+            Opacity=".9"
+            TranslationY="-50"
+            Source="icon"
+             WidthRequest="80"
+            HeightRequest="80"
+            AbsoluteLayout.LayoutBounds="0,0,1,.7"
+            AbsoluteLayout.LayoutFlags="All"
+            
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            
+            />
+
+        <StackLayout
+            Margin="10,30,10,30"
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Spacing="20"
+            VerticalOptions="EndAndExpand">
+            <StackLayout  
+                Orientation="Vertical"
+                Spacing="10"
+                HorizontalOptions="FillAndExpand">
+
+                <Button
+                   TranslationY="-50"
+                    HeightRequest="60" 
+                    BackgroundColor="#3B5998"
+                    CornerRadius="5"
+                    Text="LOGIN WITH FACEBOOK"
+                     TextColor="White"
+                     HorizontalOptions="FillAndExpand"/>
+                <StackLayout 
+                    Orientation="Horizontal"
+                    HorizontalOptions="FillAndExpand">
+                    <Button
+                        HeightRequest="60"
+                        BackgroundColor="#FC5A5A"
+                        CornerRadius="5"
+                        Text="LOGIN"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"/>
+                    <Button 
+                     
+                        HeightRequest="60"
+                        BackgroundColor="Transparent"
+                        BorderColor="White"
+                        BorderWidth="1"
+                        Text="SIGN UP"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"/>
+
+                </StackLayout>
+            </StackLayout>
+            <Label
+                FontSize="12"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="EndAndExpand">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="By signing up, you agree with our " />
+                        <Span
+                            Text="Terms and Conditions"
+                            TextColor="#FC5A5A"
+                            TextDecorations="Underline" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+        
+        
+    </AbsoluteLayout>
+
+</ContentPage>
